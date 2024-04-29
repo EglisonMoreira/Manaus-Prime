@@ -1,0 +1,107 @@
+body {
+    display: flexbox;
+}
+
+@keyframes lightEffect {
+  0% {
+      text-shadow: 0 0 10px rgba(229, 0, 0, 0.778);
+  }
+  50% {
+      text-shadow: 0 0 20px rgba(229, 0, 0, 0.618);
+  }
+  100% {
+      text-shadow: 0 0 10px rgba(177, 76, 76, 0.465);
+  }
+}
+
+/*
+.fa-m {
+  background-image: url(https://i.gifer.com/1VLy.gif);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: lightEffect 3s infinite; 
+}
+*/
+
+.fa-m {
+  background-image: url(https://i.gifer.com/Ww8a.gif);
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: lightEffect 3s infinite; 
+}
+
+.card {
+    max-width: 400px;
+    margin: auto;
+  }
+
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.d-flex{
+    margin-bottom: 80px;
+}
+@media screen and (min-width: 1200px) {
+    .fa-m{
+        font-size: 1.5rem;
+    }
+    .fa-house {
+      font-size: 1.5rem;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+  .fa-m{
+    font-size: 1rem;
+  }
+  .text-center{
+    font-size: 0.8rem;
+  }
+  .text-center1{
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 0.5rem;
+  }
+  .card-text{
+    font-size: 0.5rem;
+  }
+  .card-title{
+    font-size: 0.6rem;
+  }
+  .title{
+    font-size: 1.5rem;
+  }
+  .navbar-toggler{
+    font-size: 0.8rem;
+  }
+  }
+  
+
+  .card {
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+  }
+  
+  .card {
+    transition: transform 0.2s ease;
+  }
+  @keyframes swing {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+  }
+  .swing-animation {
+    animation: swing 0.01ms ease infinite alternate;
+  }
+  
