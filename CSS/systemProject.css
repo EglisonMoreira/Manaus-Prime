@@ -4,7 +4,7 @@ body {
 
 @keyframes lightEffect {
   0% {
-      text-shadow: 0 0 10px rgba(229, 0, 0, 0.778);
+      text-shadow: 0 0 10px rgba(255, 1, 1, 0.885);
   }
   50% {
       text-shadow: 0 0 20px rgba(229, 0, 0, 0.618);
