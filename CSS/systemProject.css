@@ -83,6 +83,9 @@ footer {
   .navbar-toggler{
     font-size: 0.8rem;
   }
+  .alert{
+    font-size:0.7rem;
+  }
   }
 
   @media screen and (max-width: 320px) {
