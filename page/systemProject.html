@@ -67,35 +67,56 @@
 
    <br>
 
-    <div class="clearfix mt-5 text-lg-center text-center ms-0" style="height: 50px; background-color: rgba(0, 0, 0, 0.175); line-height: 40px; text-align: center;">
-      <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <a href="../page/systemProject.html">
-          <button data-mdb-ripple-init type="button"  class="btn btn-outline-danger ms-1 px-1 me-2 px-lg-3 me-lg-5" style="color: black;">Inicio</button>
-           </a>
-        <a href="../page/séries.html">
-       <button data-mdb-ripple-init type="button"  class="btn btn-outline-danger ms-0 px-1 me-2 px-lg-3 me-lg-5" style="color: black;">Séries</button>
-        </a>
-        <a href="../page/filmes.html">
-       <button data-mdb-ripple-init type="button"  class="btn btn-outline-danger ms-0 px-0 me-2 px-lg-3 me-lg-5" style="color: black;">Filmes</button>
-        </a>
-        <a href="../page/animes.html">
-       <button data-mdb-ripple-init type="button"  class="btn btn-outline-danger ms-0 px-0 me-2 px-lg-3 me-lg-5" style="color: black;">Animes</button>
-        </a>
-        <a href="../page/novelas.html">      
-       <button data-mdb-ripple-init type="button" class="btn btn-outline-danger ms-0 px-0 me-2 px-lg-3 me-lg-5" style="color: black;">Novelas</button>
-        </a>
-        <a href="../page/dramas.html">
-       <button data-mdb-ripple-init type="button" class="btn btn-outline-danger ms-0 px-0 me-1 px-lg-3 me-lg-5" style="color: black;">Dramas</button>
-        </a>
-      </div>
+   <div class="clearfix mt-5 text-lg-center text-center ms-0" style="height: 50px; background-color: rgba(0, 0, 0, 0.175); line-height: 40px; text-align: center; top: 6%;">
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+     <ul class="nav" id="myTab" role="tablist">
+       <li class="nav-item" role="presentation">
+         <button class="active btn btn-outline-danger ms-1 px-1 me-2 px-lg-3 me-lg-5" id="inicio-tab" data-bs-toggle="tab" data-bs-target="#inicio-tab-pane" type="button" role="tab" aria-controls="inicio-tab-pane" aria-selected="true" style="color: black;">Inicio</button>
+       </li>
+       <li class="nav-item" role="presentation">
+         <button class="btn btn-outline-danger ms-0  px-1 me-2 px-lg-3 me-lg-5 " id="série-tab" data-bs-toggle="tab" data-bs-target="#série-tab-pane" type="button" role="tab" aria-controls="série-tab-pane" aria-selected="false" style="color: black;">Séries</button>
+       </li>
+       <li class="nav-item" role="presentation">
+         <button class="btn btn-outline-danger ms-0 px-0 me-2 px-lg-3 me-lg-5 " id="filme-tab" data-bs-toggle="tab" data-bs-target="#filme-tab-pane" type="button" role="tab" aria-controls="filme-tab-pane" aria-selected="false" style="color: black;">Filmes</button>
+       </li>
+       <li class="nav-item" role="presentation">
+         <button class="btn btn-outline-danger ms-0 px-0 me-2 px-lg-3 me-lg-5 " id="anime-tab" data-bs-toggle="tab" data-bs-target="#anime-tab-pane" type="button" role="tab" aria-controls="anime-tab-pane" aria-selected="false" style="color: black;">Animes</button>
+       </li>
+       <li class="nav-item" role="presentation">
+         <button class="btn btn-outline-danger ms-0 px-0 me-2 px-lg-3 me-lg-5" id="novela-tab" data-bs-toggle="tab" data-bs-target="#novela-tab-pane" type="button" role="tab" aria-controls="novela-tab-pane" aria-selected="false" style="color: black;">Novelas</button>
+       </li>
+       <li class="nav-item" role="presentation">
+        <button class="btn btn-outline-danger ms-0 px-0 me-1 px-lg-3 me-lg-5" id="drama-tab" data-bs-toggle="tab" data-bs-target="#drama-tab-pane" type="button" role="tab" aria-controls="drama-tab-pane" aria-selected="false" style="color: black;">Dramas</button>
+       </li>
+     </ul>
     </div>
+   </div>
 
-    <div class="container mb-5">
-      <h1 class="mt-4 mb-4 title">Filmes em Exibição</h1>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 row-cols-2">
+ 
+<!--Pagina de inico-->
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="inicio-tab-pane" role="tabpanel" aria-labelledby="inicio-tab" tabindex="0">
+
+    <div class="container-fluid mb-5">
+      <h1 class="mt-4 mb-4 title">Exibição</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 row-cols-2">
+        
+        <!--carde teste video
+        <div class="col">
+          <div class="card h-100">
+            <img class="card-img-top" src="https://media.fstatic.com/C6OIyqfnjPSZWwY2w4F6yGVTsak=/fit-in/640x480/smart/filters:format(webp)/media/movies/covers/2013/02/2fbcaec673fc9b1940f0734d0eef8f1b_1.jpg" alt="Imagem do Filme">
+            <div class="card-body">
+              <h5 class="card-title">Título do Filme</h5>
+              <p class="card-text">Descrição do Filme.</p>
+              <a href="https://www.youtube.com/embed/2lOmEIgSCms" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Ver Filme</a>
+            </div>
+          </div>
+        </div>            
+        -->
+      
         <!-- Card 1 -->
         <div class="col">
-          <div id="card1" class="card h-100 ">
+          <div id="card1" class="card h-100 border-danger">
             <img src="https://media.fstatic.com/v3ntp5ROdm-wPJQB1GFxe79l2Eo=/210x303/smart/filters:format(webp)/media/movies/covers/2023/12/Bd2oDq_2f.webp" class="card-img-top" alt="Imagem do Filme 1">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -105,7 +126,7 @@
         </div>
         <!-- Card 2 -->
         <div class="col">
-          <div id="card2" class="card h-100">
+          <div id="card2" class="card h-100 border-danger">
             <img src="https://www.showmetech.com.br/wp-content/uploads//2023/12/004-768x1024.webp" class="card-img-top" alt="Imagem do Filme" height="100%">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -115,8 +136,8 @@
         </div>
         <!-- Card 3 -->
         <div class="col">
-          <div id="card3" class="card h-100">
-            <img src="https://br.web.img2.acsta.net/c_310_420/pictures/23/12/13/18/13/4592801.jpg" class="card-img-top" alt="Imagem do Filme">
+          <div id="card3" class="card h-100 border-danger">
+            <img src="https://br.web.img2.acsta.net/c_310_420/pictures/23/12/13/18/13/4592801.jpg" class="card-img-top" alt="Imagem do Filme" height="100%">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
               <p class="card-text">Descrição do Filme.</p>
@@ -125,7 +146,7 @@
         </div>
         <!-- Card 4 -->
         <div class="col">
-          <div id="card4" class="card h-100">
+          <div id="card4" class="card h-100 border-danger">
             <img src="https://chokis.com.br/wp-content/uploads/2024/03/Cartaz-Contra-o-Mundo-2024.jpg" class="card-img-top" alt="Imagem do Filme" height="100%">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -135,7 +156,7 @@
         </div>
         <!-- Card 5 -->
         <div class="col">
-          <div id="card5" class="card h-100">
+          <div id="card5" class="card h-100 border-danger">
             <img src="https://cinema10.com.br/upload/filmes/filmes_17322_dogman-poster.jpg" class="card-img-top" alt="Imagem do Filme">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -145,7 +166,7 @@
         </div>
         <!-- Card 6 -->
         <div class="col">
-          <div id="card6" class="card h-100">
+          <div id="card6" class="card h-100 border-danger">
             <img src="https://media.fstatic.com/UrJx-B5EnELV5-dOlHwhjS5QByo=/210x303/smart/filters:format(webp)/media/movies/covers/2024/01/cats_I9AIY55.jpg" class="card-img-top" alt="Imagem do Filme">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -155,7 +176,7 @@
         </div>
         <!-- Card 7 -->
         <div class="col">
-          <div id="card7" class="card h-100">
+          <div id="card7" class="card h-100 border-danger">
             <img src="https://www.claquete.com.br/fotos/filmes/poster/15177_medio.jpg" class="card-img-top" alt="Imagem do Filme">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -165,7 +186,7 @@
         </div>
         <!-- Card 8 -->
         <div class="col">
-          <div id="card8" class="card h-100">
+          <div id="card8" class="card h-100 border-danger">
             <img src="https://cdn.cineart.com.br/vibezz_241494662.jpg" class="card-img-top" alt="Imagem do Filme">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -175,7 +196,7 @@
         </div>
         <!-- Card 9 -->
         <div class="col">
-          <div id="card9" class="card h-100">
+          <div id="card9" class="card h-100 border-danger">
             <img src="https://image.tmdb.org/t/p/w500/2J5eeroLDY0d45mVjpuGhcLZs3W.jpg" class="card-img-top" alt="Imagem do Filme">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -185,7 +206,7 @@
         </div>
         <!-- Card 10 -->
         <div class="col">
-          <div id="card10" class="card h-100">
+          <div id="card10" class="card h-100 border-danger">
             <img src="https://i.pinimg.com/236x/bf/bb/a8/bfbba802ac54cce4dc0c558042f568b5.jpg" class="card-img-top" alt="Imagem do Filme">
             <div class="card-body">
               <h5 class="card-title">Título do Filme </h5>
@@ -195,14 +216,44 @@
         </div>
       </div>
     </div>  
-     <br>
-     <br>
+  </div>
+ 
+  <!--Pagina de séries-->
+  <div class="tab-pane fade" id="série-tab-pane" role="tabpanel" aria-labelledby="série-tab" tabindex="0">
+     <!--Assuntos Aqui-->
+  </div>
+    
+  <!--Pagina de filmes-->
+  <div class="tab-pane fade" id="filme-tab-pane" role="tabpanel" aria-labelledby="filme-tab" tabindex="0">
+     <!--Assuntos Aqui-->
+  </div>
+ 
+ 
+ <!--Pagina de animes-->
+ <div class="tab-pane fade" id="anime-tab-pane" role="tabpanel" aria-labelledby="anime-tab" tabindex="0">
+   <!--Assuntos Aqui-->
+ </div>
+      
+ <!--Pagina de novelas-->
+ <div class="tab-pane fade" id="novela-tab-pane" role="tabpanel" aria-labelledby="novela-tab" tabindex="0">
+   <!--Assuntos Aqui-->
+ </div>
+      <br>
+    <br>
+ <!--Pagina de dramas-->
+ <div class="tab-pane fade" id="drama-tab-pane" role="tabpanel" aria-labelledby="drama-tab" tabindex="0">
+    <!--Assuntos Aqui-->
+ </div>
+
+      <br>
+    <br>
+
     <nav class="navbar navbar-expand-lg fixed-bottom " style="background-color: rgba(0, 0, 0, 0.448); max-height: 80px;">
       <div class="container-fluid m-lg-2">
         <i class="fas fa-house m-lg-5"></i>  
         <div class=" ms-lg-auto">
           <a href="#" id="scrollToTopBtn" title="Go to top"><button data-mdb-ripple-init type="button" class="btn btn-outline-danger m-1" style="color: black;"><i class="fas fa-arrow-up"></i></button></a>     
-      </div> 
+        </div> 
       </div>
     </nav>
     
